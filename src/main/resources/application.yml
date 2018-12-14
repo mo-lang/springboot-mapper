@@ -1,0 +1,16 @@
+server:
+  port: 9999
+  context-path: /mapper
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: jmq
+    password: jmq
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+mybatis:
+  type-aliases-package: com.baizhi.jmq.entity
