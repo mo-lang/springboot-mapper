@@ -21,5 +21,4 @@ public class City implements Serializable {
     private String name;
     @Column(name = "provincecode")
     private String provinceCode;
-
 }
